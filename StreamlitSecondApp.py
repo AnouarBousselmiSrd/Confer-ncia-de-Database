@@ -12,7 +12,10 @@ import streamlit as st
 from sqlalchemy import create_engine
 engine = create_engine('postgresql://postgres:12345@10.100.1.177:5432/Engenharia')
 
-st.title('Projeto POP')
+header = st.container()
+
+with header:
+    st.title('Projeto POP')
 
 df= pd.read_sql("select * from \"EngenhariaSecondProj\"", engine)
 df=df.rename(columns={"ItemId": "Item", "MPS_ItensAltTipoComponente": "Tipo","ScheduledQuantity":"Quantidade da Op",
