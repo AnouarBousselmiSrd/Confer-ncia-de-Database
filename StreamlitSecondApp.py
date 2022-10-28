@@ -8,7 +8,7 @@ Created on Wed Oct 19 12:32:48 2022
 import pandas as pd
 import numpy as np
 import streamlit as st
-from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode
+# from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode
 from sqlalchemy import create_engine
 engine = create_engine('postgresql://postgres:12345@localhost:5432/Engenharia')
 
