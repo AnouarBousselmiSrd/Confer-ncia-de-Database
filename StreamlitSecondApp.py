@@ -10,7 +10,7 @@ import numpy as np
 import streamlit as st
 # from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode
 from sqlalchemy import create_engine
-engine = create_engine('postgresql://postgres:12345@10.100.1.177:5432/Engenharia')
+engine = create_engine('postgresql://postgres:12345@10.100.1.175:5432/Engenharia')
 
 header = st.container()
 
