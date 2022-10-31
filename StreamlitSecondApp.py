@@ -10,9 +10,9 @@ import numpy as np
 import streamlit as st
 # from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode
 from sqlalchemy import create_engine
-# engine = create_engine('postgresql://postgres:12345@10.100.1.175:5432/Engenharia')
-import psycopg2
-engine= psycopg2.connect(**st.secrets["postgres"])
+engine = create_engine('postgresql://postgres:12345@10.100.1.175:5432/Engenharia')
+#import psycopg2
+#engine= psycopg2.connect(**st.secrets["postgres"])
 
 header = st.container()
 
